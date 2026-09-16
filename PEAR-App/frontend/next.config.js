@@ -4,9 +4,6 @@ const nextConfig = {
   swcMinify: true,
   images: {
     unoptimized: true,
-  },
-  // Allow external images
-  images: {
     remotePatterns: [
       {
         protocol: 'https',
@@ -17,10 +14,6 @@ const nextConfig = {
         hostname: '**',
       },
     ],
-  },
-  // WebSocket support
-  websocket: {
-    perMessageDeflate: true,
   },
 }
 
